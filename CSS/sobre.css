@@ -1,0 +1,52 @@
+@import url(style.css);
+
+.sobrenosotros {
+    text-align: center;
+    padding: 30px 300px 0px 300px;
+}
+
+.titulo_sobre {
+    background-color: #B8DFBE;
+    border-radius: 20px;
+    text-align: center;
+}
+.parrafo_sobre p {
+        background-color: #B8DFBE;
+        padding: 15px;
+        border-radius: 20px;
+        text-align: center;
+        font-size: 1.5rem;
+}
+
+
+.historia {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    padding: 0px 200px 0px 0px;
+}
+
+.historia_texto {
+    background-color: #B8DFBE;
+    border-radius: 20px;
+    text-align: center;
+    padding: 0px 20px 20px 20px;
+
+    & h5 {
+        font-size: 3rem;
+    }  
+}
+
+.historia_foto {
+
+    padding: 0px 20px 20px 50px;
+
+    & img {
+    border-radius: 30px;
+    border: 6px solid #203827;
+    }
+}
+
+
+
+

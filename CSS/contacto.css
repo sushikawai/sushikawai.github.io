@@ -1,0 +1,88 @@
+@import url(style.css);
+
+.portada3 {
+    height: calc(100vh - 90px);
+    margin-top: 0px;
+}
+
+#portada3 {
+    background-image: url("../IMAGENES/sushi.jpg");
+    background-size: cover;
+}
+
+.texto_portada3 {
+    text-align: center;
+    padding: 10px 250px 0px 250px;
+}
+
+
+/*redes*/
+
+.datos {
+    padding: 30px 20px 0px 100px;
+
+    & h3 {
+        text-align: center;
+    }
+}
+
+.formulario_items {
+    padding: 30px 100px 30px 0px;
+
+    & h4 {
+        text-align: center;
+    }
+}
+
+.lista_datos {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    margin-top: 50px;
+}
+
+.lista_datos_1 {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+
+}
+
+.lista_datos_imagenes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 75px;
+    height: 75px;
+    background-color: #c9ebc9;
+    border-radius: 10px;
+
+}
+
+.lista_datos_textos {
+
+    & h6 {
+    font-size: 1rem;
+    }
+
+    & a {
+        color: #253f2c;
+    }
+}
+
+.formulario_input {
+    background-color:#c9ebc9;
+    padding: 20px 20px 20px 20px;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 25px;
+    
+}
+
+.grupos_input input, textarea{
+    width: 100%;
+    padding: 5px 10px;
+    border-radius: 15px;
+}

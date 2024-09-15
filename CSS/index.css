@@ -1,0 +1,181 @@
+@import url(style.css);
+
+.fondo {
+    background-color: #97c79f;
+}
+
+/* estilos de la seccion portada */
+
+.portada {
+    height: calc(100vh - 91px);
+}
+
+#portada {
+    background-image: url("../IMAGENES/Sushicasero-portada.png");
+    background-size: cover;
+
+    & img {
+    height: auto;
+    width: 100%;
+    padding: 100px 100px 10px 10px;
+    }
+}
+
+.texto_portada {
+    display: flex;
+    text-align: center;
+    padding: 60px 10px 10px 100px;
+}
+
+
+/*portada de servicio*/
+.portada1 {
+    height: calc(50vh - 90px);
+    margin-top: 0px;
+}
+
+#portada1 {
+    background-image: url("../IMAGENES/Servicio.jpg");
+    background-size: cover;
+}
+
+.texto_portada1 {
+    text-align: center;
+    padding-top: 40px;
+}
+
+
+/*contenido de  servicio*/
+
+.productos_makis h3 {
+    font-size: 4rem;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.productos_lista {
+    gap: 10px;
+    padding: 30px 0px 10px 140px;
+}
+
+.makis {
+    display: flex;
+    align-items: center;
+    
+    gap: 30px;
+}
+
+.makis_texto {
+    background-color: #B8DFBE;
+    padding: 20px 20px;
+    border-radius: 20px;
+    text-align: center;
+
+    & h2 {
+        font-size: 1.2rem;
+    }
+
+    & p {
+        font-size: 0.9rem;
+    }
+}
+
+.makis_foto {
+
+    & img {
+    border-radius: 30px;
+    border: 6px solid #203827;
+    }
+}
+
+.makis_boton {
+    margin-top: 10px;
+}
+
+@media (max-width: 767px) {
+
+    .portada {
+        height: calc(50vh - 51px);
+    }
+    
+    #portada {
+        background-image: url("../IMAGENES/Sushicasero-portada.png");
+        background-size: cover;
+    
+        & img {
+        height: auto;
+        width: 100%;
+        
+        }
+    }
+
+    .foto_portada {
+        display: flex;
+        justify-content: center;
+    }
+
+    & img {
+        width: auto;
+        height: 50%;
+    }
+
+    .texto_portada {
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+        align-items: center;
+
+
+        & h6 {
+            text-align: center;
+            font-size: 2rem;
+        }
+    }
+
+    .servicio_foto {
+        width: 75%;
+        height: auto;
+    }
+
+
+    img {
+        width: 100%;
+        height: auto;
+        border-radius: 25px;
+    }
+
+    .testimonio_foto {
+        width: 75%;
+        height: auto;
+    }
+
+    img {
+        width: 100%;
+        height: auto;
+        border-radius: 25px;
+    }
+
+    .testimonio {
+        align-items: center;
+        gap: 25px;
+
+        & p {
+            text-align: center;
+        }
+
+    }
+
+
+    .banner {
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+        align-items: center;
+
+        & h3,
+        p {
+            text-align: center;
+        }
+    }
+
+}

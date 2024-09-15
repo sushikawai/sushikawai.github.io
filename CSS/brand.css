@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Knewave&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Knewave&family=Lemon&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alumni+Sans:ital,wght@0,100..900;1,100..900&family=Knewave&family=Lemon&display=swap');
+
+/*rooter la pagina*/
+
+:root {
+    --colorverde: #B8DFBE;
+    --colorverdemedio: #7DBB87;
+    --colorverdeoscuro: #50835E;
+    --colorblanca: #FFFFFF;
+    --colornegro: #000000;
+
+/* var font-family */
+    --fontKnewave: "Knewave", sans-serif;
+    --fontLemon: "Lemon", sans-serif;
+    --fontAlumniSans: "AlumniSans", sans-serif;
+}
+/* Rootear la página */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+    font-family: var(--fontKnewave);
+    font-size: 16px;
+}
+
+/*rooter la pagina*/
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+    font-weight: 900;
+    text-transform: uppercase;
+}
+
+
+
+h1 {
+    font-size: 3.5rem;
+}
+
+h2 {
+    font-size: 3rem;
+}
+
+h3 {
+    font-size: 2.5rem;
+}
+
+h4 {
+    font-size: 2rem;
+}
+
+h5 {
+    font-size: 1.5rem;
+}
+
+h6 {
+    font-size: 5rem;
+}
+
+
+p {
+    font-size: 1rem;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+/*BOTONES*/
+
+button {
+    cursor: pointer;
+    border: none;
+    padding: 5px 25px;
+    border-radius: 50px;
+    background-color: transparent;
+    font-size: 1.25rem;
+    font-weight: 500;
+
+}
+
+
+/* Boton 1 - verde oscuro */
+
+.btn1 {
+    background: linear-gradient(#1c3f25, #b1e7b9);
+    color: var(--colornegro);
+    border: 2px solid var(--colorverdeoscuro);
+}
+
+.btn1:hover {
+    border: 4px solid #50835E;
+    background-color: #50835E;  
+    padding: 5px 25px;
+    border-radius: 15px;
+    
+}
+
+/* Contenedor */
+.container {
+    max-width: 1870px;
+}
+
+.grid_2 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 30px;
+}
+
+.grid_3 {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+
+}
+
+@media (max-width: 767px) {
+
+    .container {
+        padding: 80px 50px;
+    }
+
+
+    h1 {
+        font-size: 3rem;
+    }
+
+    h2 {
+        font-size: 2.6rem;
+    }
+
+    h3 {
+        font-size: 2.2rem;
+    }
+
+    h4 {
+        font-size: 1.8rem;
+    }
+
+    h5 {
+        font-size: 1.4rem;
+    }
+
+    h6 {
+        font-size: 1.2rem;
+    }
+
+    p {
+        font-size: 1rem;
+    }
+
+    a {
+        text-decoration: none;
+    }
+
+    .grid_2 {
+        grid-template-columns: 1fr;
+        grid-gap: 100px;
+    }
+
+    .grid_3 {
+
+        grid-template-columns: 1fr;
+        grid-gap: 20px;
+    }
+
+}

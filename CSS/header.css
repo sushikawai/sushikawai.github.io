@@ -1,0 +1,143 @@
+/*estilospara el header*/
+
+header {
+    background: linear-gradient(#385f42, #B8DFBE);
+
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px 15px 15px;
+}
+
+.LOGO1 {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    width: auto;
+
+    & img {
+        width: auto;
+        height: 100px;
+    }
+
+    & h4 {
+        font-size: 2rem;
+        font-weight: 400;
+    }
+}
+
+.logo_titulo {
+    display: flex;
+    align-content: center;
+}
+
+.menu nav {
+    display: flex;
+    gap: 50px;
+    align-items: center;
+
+
+    & ul {
+        display: flex;
+        gap: 50px;
+
+        & li {
+            list-style: none;
+            color: var(--colornegro);
+            
+
+            & a {
+                color: var(--colornegro);
+                padding: 5px 5px;
+                font-size: 1.3rem;
+                font-weight: 500;
+                text-decoration: underline;
+            }
+
+            & a:hover {
+                border: 2px solid #50835E;
+                background: linear-gradient(#1c3f25, #b1e7b9); 
+                padding: 5px 25px;
+                border-radius: 15px;
+                
+            }
+        }
+    }
+}
+
+.abrir_menu {
+    display: none;
+}
+
+.logo2 {
+    display: none;
+}
+
+@media (max-width: 767px) {
+
+    .header {
+        display: block;
+    }
+
+    .abrir_menu {
+        display: block;
+    }
+
+    .logo2 {
+        display: flex;
+        justify-content: space-between;
+        padding: 25px 0px 25px;
+
+        & img {
+            width: auto;
+            height: 40px;
+        }
+
+
+        & button img {
+            width: 30px;
+            height: auto;
+        }
+    }
+
+    .logo1 {
+        display: flex;
+        justify-content: space-between;
+
+        & img {
+            width: auto;
+            height: 20px;
+        }
+
+        & button img {
+            width: 30px;
+            height: auto;
+        }
+    }
+
+    .menu {
+        visibility: hidden;
+        position: fixed;
+        background-color: var(--colorazul);
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+    }
+
+    .menu nav {
+        flex-direction: column;
+
+        & ul {
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+
+    .menu.visible {
+        visibility: visible;
+    }
+}
